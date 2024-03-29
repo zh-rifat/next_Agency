@@ -27,3 +27,61 @@
 .section-text{
   @apply text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-700;
 }
+.card img{
+    @apply object-cover
+}
+.program-card:hover{
+  h1{
+    @apply sticky top-0 bg-white shadow-sm
+  }
+  .card-details{
+    @apply  transition-all -translate-y-16 !overflow-y-scroll h-48 scroll-m-0;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge 
+    
+    /* Hide scrollbar for Webkit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  p{
+    @apply line-clamp-none;
+  }
+}
+.member-card:hover{
+  img{
+    @apply scale-125 transition-all;
+  }
+  h1{
+    @apply sticky top-0 shadow-sm
+  }
+  .card-details{
+    @apply  transition-all translate-y-2 ;
+
+  }
+}
+
+.portfolio-card:hover{
+  .card-titlebar{
+    @apply sticky top-0 bg-white shadow-sm
+  }
+  .card-details{
+    @apply  transition-all -translate-y-16 !overflow-y-scroll h-48 scroll-m-0;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge 
+    
+    /* Hide scrollbar for Webkit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  p{
+    @apply line-clamp-none;
+  }
+}
+.navbar a.active{
+  @apply border-green-500
+}
+

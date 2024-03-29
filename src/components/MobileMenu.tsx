@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import { useDispatch, useSelector } from 'react-redux'
+import NavLink from './NavLink'
 
 type Props = {}
 
@@ -20,7 +21,7 @@ const MobileMenu = (props: Props) => {
     }else{
       document.body.style.overflow='';
     }
-  }, [])
+  }, [isOpen])
   
   // if(!isOpen)return;
   return (
@@ -38,9 +39,11 @@ const MobileMenu = (props: Props) => {
         />
         <ul className='mt-5 flex-col'>
         {navlist.map((item,i)=>(
-          <li key={i} className='mt-4 border-b-2 pb-1 border-green-400'>
-            <Link className='font-bold' href={item.link}>{item.label}</Link>
+          <li key={i} className='mt-4 pb-1 '>
+            <NavLink className='font-bold hover:border-green-400 border-b-2' exact={item.label==='Home'} href={item.link} >{item.label}</NavLink>
+
           </li>
+
         ))} 
         </ul>
       </section>
