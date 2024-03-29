@@ -2,6 +2,7 @@ import ContactForm from '@/components/ContactForm';
 import Navbar from '@/components/Navbar';
 import CodingAnimation from '@/components/animations/CodingAnimation';
 import MailAnimation from '@/components/animations/MailAnimation';
+import { aboutDescription } from '@/utils/info';
 import { socialMediaList } from '@/utils/lists';
 import Link from 'next/link';
 import { FC } from 'react';
@@ -22,9 +23,7 @@ const HomePage: FC<pageProps> = ({}) => {
         <h1 className='section-title'>About Us</h1>
         <div className='flex flex-col md:flex-row justify-between items-center md:space-x-5 py-12'>
           <CodingAnimation className='w-64 mx-auto md:w-80'/>
-          <p className='text-justify section-text flex-1'>
-          Welcome to Neuronite, the premier programming and software skills learning platform based in Khulna University of Engineering & Technology. Our courses in C, C++, Python, Canva, Power BI, and LaTeX are designed to educate students in programming, software skills, and technology. Our expert teachers are committed to helping students achieve their full potential. Whether you're a beginner or an experienced programmer, Neuronite offers flexible and comprehensive courses to meet your needs. Contact us today to learn more about our programming courses and expand your skills in data science and machine learning.
-          </p>
+          <p className='text-justify section-text flex-1'>{aboutDescription}</p>
         </div>
       
       </section>
