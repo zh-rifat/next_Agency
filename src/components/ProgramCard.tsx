@@ -18,7 +18,7 @@ const ProgramCard = ({title,description,imgUrl}: Props) => {
     </div>
     <div className="card-details w-full transition-all border-t-2 bg-white">
       
-      <h1 className='p-2 text-center font-semibold text-slate-700'>{title}</h1>
+      <h1 className='p-2 text-2xl text-center font-semibold text-slate-700'>{title}</h1>
       <p className="px-3 text-sm text-justify line-clamp-3 text-slate-600 font-semibold">
         {description}
       </p>

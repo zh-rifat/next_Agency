@@ -26,13 +26,13 @@ export const socialurls=[
 
 export const programList=[
   {
-    title:'C Programming',
-    desciption:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, voluptatem minima vitae doloribus quia quae sit aliquam enim fuga ducimus laborum temporibus consequuntur amet blanditiis nam placeat cupiditate mollitia perferendis. Non fugit qui similique eius corporis provident! Ipsum, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, voluptatem minima vitae doloribus quia quae sit aliquam enim fuga ducimus laborum temporibus consequuntur amet blanditiis nam placeat cupiditate mollitia perferendis. Non fugit qui similique eius corporis provident! Ipsum, placeat.",
+    title:'C: Crack The Code',
+    desciption:"Embark on a transformative coding journey with 'Crack the Code' - an exclusive C programming course by Neuronite. Delve deep into the fundamentals of C programming, mastering concepts like variables, loops, functions, and more. Through hands-on exercises, real-world projects, and expert guidance, you'll gain practical coding experience and sharpen your problem-solving skills. Join us and unlock your potential to become a proficient programmer!",
     imgUrl:'/images/c.png'
   },
   {
     title:'Python Programming',
-    desciption:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, voluptatem minima vitae doloribus quia quae sit aliquam enim fuga ducimus laborum temporibus consequuntur amet blanditiis nam placeat cupiditate mollitia perferendis. Non fugit qui similique eius corporis provident! Ipsum, placeat.",
+    desciption:"Step into the world of Python programming with our specialized course designed for 2nd-year students. Whether you're a novice or have some coding experience, this program caters to all skill levels. Dive into Python's versatile syntax, data structures, object-oriented programming, and more. Through interactive lessons, practical examples, and engaging projects, you'll harness the power of Python to solve real-world problems efficiently. Join us on this learning journey and elevate your coding prowess with Python!",
     imgUrl:'/images/python.png'
   },
 ]
