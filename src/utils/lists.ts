@@ -1,4 +1,4 @@
-import { IoLogoFacebook } from "react-icons/io"
+import { IoLogoFacebook, IoLogoYoutube } from "react-icons/io"
 import { IoLogoLinkedin } from "react-icons/io5"
 import { SiGmail } from "react-icons/si"
 
@@ -11,9 +11,17 @@ export const navlist=[
 ]
 
 export const socialMediaList=[
-  {label:'Facebook',icon:IoLogoFacebook,color:"#1877F2",url:"#"},
-  {label:'LinkedIn',icon:IoLogoLinkedin,color:"#0077B5",url:"#"},
-  {label:'Email',icon:SiGmail,color:"#EA4335",url:"#"},
+  {label:'Facebook',icon:IoLogoFacebook,color:"#1877F2",url:"https://facebook.com/neuronite.kuet"},
+  {label:'LinkedIn',icon:IoLogoLinkedin,color:"#0077B5",url:"https://www.linkedin.com/company/neuronite"},
+  {label:'Email',icon:SiGmail,color:"#EA4335",url:"mailto:neuronite.kuet@gmail.com"},
+  {label:'Youtube',icon:IoLogoYoutube,color:"#EA4335",url:"https://www.youtube.com/@NeuroniteKUET"},
+]
+
+export const socialurls=[
+  {name:'email', url:'mailto:neuronite.kuet@gmail.com'},
+  {name:'facebook', url:'https://facebook.com/neuronite.kuet'},
+  {name:'linkedin', url:'https://www.linkedin.com/company/neuronite'},
+  {name:'youtube', url:'https://www.youtube.com/@NeuroniteKUET'}
 ]
 
 export const programList=[

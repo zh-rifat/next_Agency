@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
         </div>
         <div className='flex flex-row items-center justify-center space-x-4 py-2 border-t-2 border-b-2'>
           {socialMediaList.map((item,i)=>(
-              <Link key={i} href={item.url}>
+              <Link key={i} href={item.url} target='_blank'>
                 <item.icon className={`text-lg sm:text-3xl`} style={{color:item.color}}/>
               </Link>
           ))
