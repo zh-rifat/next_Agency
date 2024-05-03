@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 type Props = {
@@ -10,8 +11,9 @@ type Props = {
 }
 const NavLink = ({href,exact=false,children,...props}: Props) => {
   const pathname = usePathname();
-  const isActive = exact ? pathname === href : pathname.startsWith(href);
-
+  
+  // const isActive = exact ? pathname === href : pathname.startsWith(href);
+  const isActive=false;
   if (isActive) {
       props.className += ' active';
   }

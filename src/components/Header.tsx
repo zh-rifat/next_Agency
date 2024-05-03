@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar';
+import Image from 'next/image';
+import { Button } from './ui/button';
 
 type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <div className='n-container  sticky top-0 left-0 bg-white shadow-md z-50'>
+    <header>
       <Navbar/>
-    </div>
+    </header>
   )
 }
 

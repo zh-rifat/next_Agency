@@ -5,23 +5,23 @@ import { SiGmail } from "react-icons/si"
 
 export const navlist=[
   {label:'Home', link:'/'},
-  {label:'Portfolio', link:'/portfolio'},
-  {label:'Members', link:'/members'},
-  {label:'Programs', link:'/programs'},
+  {label:'About', link:'#about'},
+  {label:'Services', link:'#services'},
+  {label:'Contact', link:'#contact'},
 ]
 
 export const socialMediaList=[
-  {label:'Facebook',icon:IoLogoFacebook,color:"#1877F2",url:"https://facebook.com/neuronite.kuet"},
-  {label:'LinkedIn',icon:IoLogoLinkedin,color:"#0077B5",url:"https://www.linkedin.com/company/neuronite"},
-  {label:'Email',icon:SiGmail,color:"#EA4335",url:"mailto:neuronite.kuet@gmail.com"},
-  {label:'Youtube',icon:IoLogoYoutube,color:"#EA4335",url:"https://www.youtube.com/@NeuroniteKUET"},
+  {label:'Facebook',icon:IoLogoFacebook,color:"#1877F2",url:"#"},
+  {label:'LinkedIn',icon:IoLogoLinkedin,color:"#0077B5",url:"#"},
+  {label:'Email',icon:SiGmail,color:"#EA4335",url:"mailto:#"},
+  {label:'Youtube',icon:IoLogoYoutube,color:"#EA4335",url:"#"},
 ]
 
 export const socialurls=[
-  {name:'email', url:'mailto:neuronite.kuet@gmail.com'},
-  {name:'facebook', url:'https://facebook.com/neuronite.kuet'},
-  {name:'linkedin', url:'https://www.linkedin.com/company/neuronite'},
-  {name:'youtube', url:'https://www.youtube.com/@NeuroniteKUET'}
+  {name:'email', url:'mailto:#'},
+  {name:'facebook', url:'#'},
+  {name:'linkedin', url:'#'},
+  {name:'youtube', url:'#'}
 ]
 
 export const programList=[
@@ -37,18 +37,6 @@ export const programList=[
   },
 ]
 
-export const memberList=[
-  {
-    name:'Md. Sabbir Rahman Akash',
-    designation:"Ex-President",
-    imgUrl:'/images/python.png'
-  },
-  {
-    name:'Tarik Anam Tonmoy',
-    designation:"President",
-    imgUrl:'/images/python.png'
-  }
-]
 
 export const portFolioList=[
   {

@@ -7,7 +7,7 @@ type Props = {}
 const Logo = (props: Props) => {
   return (
     <Link href={'/'}>
-        <Image src='/images/logo_light.png' alt='NEURONITE' width={130}  height={10}/>
+        <Image src='/images/logo.png' alt='FAUZ' width={40}  height={50}/>
     </Link>
   )
 }

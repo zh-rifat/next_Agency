@@ -1,12 +1,14 @@
 import { navlist } from '@/utils/lists'
-import sidebarSlice, { toggleSidebar } from '@/utils/slices/sidebarSlice'
+import sidebarSlice, { setSidebarOpen, toggleSidebar } from '@/utils/slices/sidebarSlice'
 import { RootState } from '@/utils/store'
 import clsx from 'clsx'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { EventHandler, SyntheticEvent, useEffect } from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import { useDispatch, useSelector } from 'react-redux'
 import NavLink from './NavLink'
+import EventEmitter from 'events'
+import BtnToggleTheme from './BtnToggleTheme'
 
 type Props = {}
 
@@ -23,6 +25,13 @@ const MobileMenu = (props: Props) => {
     }
   }, [isOpen])
   
+
+  const handleCloseOnclick=(e:any)=>{
+    if(e.target.tagName==='A'){
+      dispatch(setSidebarOpen(false));
+    }
+  }
+
   // if(!isOpen)return;
   return (
     <div className='h-full fixed top-0 right-0 overflow-hidden z-50'>
@@ -30,22 +39,29 @@ const MobileMenu = (props: Props) => {
       isOpen&&'!block'
 
       )}/>
-      <section className={clsx('text-black bg-white flex-col fixed right-0  top-0 h-screen p-12 pr-24 gap-8 z-auto translate-x-full transition-all duration-200 overflow-hidden invisible',
-      isOpen&&'!translate-x-0 !block !visible'
+      <section className={clsx('fixed right-0  top-0 h-screen p-12 gap-8 z-auto translate-x-full transition-all duration-200 overflow-hidden w-full justify-center bg-background',
+      isOpen&&'!translate-x-0'
          
       )}>
-        <IoCloseOutline className='absolute top-6 left-1 text-4xl font-bold cursor-pointer'
+        
+        <IoCloseOutline className='absolute top-3 font-bold right-6 text-4xl cursor-pointer'
           onClick={()=>dispatch(toggleSidebar(null))}
         />
-        <ul className='mt-5 flex-col'>
-        {navlist.map((item,i)=>(
-          <li key={i} className='mt-4 pb-1 '>
-            <NavLink className='font-bold hover:border-green-400 border-b-2' exact={item.label==='Home'} href={item.link} >{item.label}</NavLink>
+        <div className='flex flex-col items-center justify-between space-y-5 h-full py-12'>
+          <ul className='mt-5 flex flex-col items-center' onClick={handleCloseOnclick}>
+          {navlist.map((item,i)=>(
+            <li key={i} className='mt-4 pb-1 '>
+              <NavLink className='font-bold text-2xl border-b-2 hover:border-muted/50 hover:text-foreground/50 border-muted' exact={item.label==='Home'} href={item.link} >{item.label}</NavLink>
 
-          </li>
+            </li>
 
-        ))} 
-        </ul>
+          ))} 
+          </ul>
+          <div className=''>
+          <BtnToggleTheme/>
+          </div>
+
+        </div>
       </section>
     </div>
   )

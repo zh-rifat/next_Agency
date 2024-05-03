@@ -1,6 +1,5 @@
 import MemberCard from '@/components/MemberCard'
 import ProgramCard from '@/components/ProgramCard'
-import { memberList, programList } from '@/utils/lists'
 import React from 'react'
 
 type Props = {}
